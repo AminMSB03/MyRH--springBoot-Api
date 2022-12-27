@@ -1,5 +1,9 @@
 package ma.myrh.security;
 
+import ma.myrh.entities.Agent;
+import ma.myrh.entities.Company;
+import ma.myrh.services.agentService.AgentService;
+import ma.myrh.services.companyService.CompanyService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -7,6 +11,8 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -15,6 +21,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,12 +31,15 @@ public class SecurityConfig {
 
     PasswordEncoder passwordEncoder;
     JwtFilter JwtFilter;
+    CompanyService companyService;
+    AgentService agentService;
 
-    public SecurityConfig(PasswordEncoder passwordEncoder, JwtFilter jwtFilter) {
+    public SecurityConfig(PasswordEncoder passwordEncoder, ma.myrh.security.JwtFilter jwtFilter, CompanyService companyService, AgentService agentService) {
         this.passwordEncoder = passwordEncoder;
-        this.JwtFilter = jwtFilter;
+        JwtFilter = jwtFilter;
+        this.companyService = companyService;
+        this.agentService = agentService;
     }
-
 
     @Bean
     AuthenticationManager authenticationManager(
@@ -40,15 +50,15 @@ public class SecurityConfig {
     @Bean
     UserDetailsService loadUserByUsername() throws UsernameNotFoundException {
         return email->{
-            Map<String, String> map = new HashMap<>();
-            Map<String, String> map2 = new HashMap<>();
-            map.put("amine",this.passwordEncoder.encode("amine123"));
-            map2.put("amine2",this.passwordEncoder.encode("amine1234"));
 
-            if(map.containsKey(email))
-                return new User(email,map.get(email),new ArrayList<>());
-            else if(map2.containsKey(email))
-                return new User(email,map2.get(email),new ArrayList<>());
+            Agent agent = this.agentService.Login(email);
+            if(agent!=null)
+                return new User(email,agent.getPassword(), Collections.singleton(new SimpleGrantedAuthority("AGENT")));
+
+            Company company = this.companyService.login(email);
+            if(company!=null)
+                return new User(email,company.getPassword(), Collections.singleton(new SimpleGrantedAuthority("COMPANY")));
+
             throw new UsernameNotFoundException(email);
         };
     }
