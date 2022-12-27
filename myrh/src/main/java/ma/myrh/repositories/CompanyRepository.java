@@ -1,4 +1,4 @@
-package ma.myrh.dtos;
+package ma.myrh.repositories;
 
 import ma.myrh.entities.Company;
 import org.springframework.data.jpa.repository.JpaRepository;

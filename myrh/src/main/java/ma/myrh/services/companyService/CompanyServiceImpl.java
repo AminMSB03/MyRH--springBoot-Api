@@ -1,6 +1,6 @@
 package ma.myrh.services.companyService;
 
-import ma.myrh.dtos.CompanyRepository;
+import ma.myrh.repositories.CompanyRepository;
 import ma.myrh.entities.Company;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,7 +1,7 @@
 package ma.myrh.services.agentService;
 
 
-import ma.myrh.dtos.AgentRepository;
+import ma.myrh.repositories.AgentRepository;
 import ma.myrh.entities.Agent;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
