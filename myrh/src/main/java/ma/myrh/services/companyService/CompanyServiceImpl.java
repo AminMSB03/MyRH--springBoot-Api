@@ -24,4 +24,9 @@ import java.util.Optional;
         }
         return null;
     }
+
+    @Override
+    public Company register(Company company) {
+        return null;
+    }
 }
