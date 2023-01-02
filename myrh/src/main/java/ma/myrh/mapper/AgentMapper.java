@@ -9,6 +9,6 @@ import org.mapstruct.factory.Mappers;
 public interface AgentMapper {
 
     AgentMapper MAPPER = Mappers.getMapper(AgentMapper.class);
-
+    
     AgentDto entityToDTO(Agent agent);
 }

@@ -17,7 +17,6 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -44,7 +43,6 @@ public class SecurityConfig {
 
    @Bean
    UserDetailsService userDetailsService(){
-      System.out.println("i'm here"+"-".repeat(100));
       return email -> {
          Agent agent = this.agentService.Login(email);
          if (agent != null) {

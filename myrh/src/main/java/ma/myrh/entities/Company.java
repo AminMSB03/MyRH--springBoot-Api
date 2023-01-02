@@ -3,11 +3,14 @@ package ma.myrh.entities;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
 
-@Data @NoArgsConstructor
+
+@Data
 @Entity public class Company {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,5 +24,6 @@ import java.util.List;
 
     @OneToMany(mappedBy = "company")
     private List<Offer> offers;
+
 
 }

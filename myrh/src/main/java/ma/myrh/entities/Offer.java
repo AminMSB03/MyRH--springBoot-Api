@@ -3,11 +3,13 @@ package ma.myrh.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 
-@Data @NoArgsConstructor
-@Entity
+
+@Entity @Data
 public class Offer {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +23,6 @@ public class Offer {
 
     @ManyToOne
     private Company company;
-
 
 
 }
