@@ -1,17 +1,21 @@
 package ma.myrh.web;
 
-import ma.myrh.dtos.CompanyDto;
+import lombok.extern.slf4j.Slf4j;
+import ma.myrh.dtos.CompanyDtoResponse;
 import ma.myrh.entities.Company;
 import ma.myrh.mapper.CompanyMapper;
 import ma.myrh.services.companyService.CompanyService;
 import org.mapstruct.factory.Mappers;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@Slf4j
+@CrossOrigin("*")
 public class BasicController {
 
 
@@ -33,7 +37,7 @@ public class BasicController {
             username = principal.toString();
         }
         Company company = this.companyService.login(username);
-        CompanyDto companyDto = this.companyTargetMapper.companyDto(company);
+        CompanyDtoResponse companyDto = this.companyTargetMapper.companyToCompanyDtoResponse(company);
         System.out.println(companyDto);
         return username;
     }

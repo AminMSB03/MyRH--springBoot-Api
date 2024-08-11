@@ -6,6 +6,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Builder @Data
 public class RegisterDto {
-    CompanyDto companyDto;
+    CompanyDtoRequest companyDtoRequest;
     MultipartFile file;
 }

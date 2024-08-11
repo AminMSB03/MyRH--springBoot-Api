@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ebda14ce-9ce2-4efe-9f34-33db00293e30" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/dtos/CompanyDtoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/dtos/CompanyDtoResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/dtos/OfferDtoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/dtos/OfferDtoResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/dtos/OfferDtoResponseTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/dtos/UpdateOffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/enums/OfferStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/services/offerService/OfferService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/services/offerService/OfferServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/web/CompanyRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/web/OfferRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/MyrhApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/MyrhApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/dtos/CompanyDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/dtos/RegisterDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/dtos/RegisterDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/entities/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/entities/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/entities/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/entities/Offer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/exeptions/JwtExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/exeptions/JwtExpiredToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/mapper/AgentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/mapper/AgentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/mapper/CompanyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/mapper/CompanyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/mapper/OfferMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/mapper/OfferMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/repositories/AgentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/repositories/AgentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/repositories/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/repositories/CompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/repositories/OfferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/repositories/OfferRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/security/CustomAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/security/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/security/JwtAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/services/companyService/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/services/companyService/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/services/companyService/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/services/companyService/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/web/BasicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/java/ma/myrh/web/BasicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrh/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myrh/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrhFront/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/myrhFront/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrhFront/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/myrhFront/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrhFront/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/myrhFront/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrhFront/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/myrhFront/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrhFront/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/myrhFront/src/app/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrhFront/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/myrhFront/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrhFront/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/myrhFront/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrhFront/src/app/offers/offers.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/myrhFront/src/app/offers/offers.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrhFront/src/app/offers/offers.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/myrhFront/src/app/offers/offers.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrhFront/src/app/service/authentication.service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/myrhFront/src/app/service/authentication.service.service.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2M48zQv5e36RQwKcYzsU53NL4y5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ebda14ce-9ce2-4efe-9f34-33db00293e30" name="Changes" comment="" />
+      <created>1677015755609</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677015755609</updated>
+      <workItem from="1677015758225" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

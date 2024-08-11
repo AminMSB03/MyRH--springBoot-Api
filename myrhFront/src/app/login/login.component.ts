@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormBuilder } from '@angular/forms';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup,FormBuilder, NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Authentication } from '../service/authentication.service.service';
 
 @Component({
   selector: 'app-login',
@@ -10,19 +12,40 @@ export class LoginComponent implements OnInit {
 
   companyFormGroup!: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  errorMessage!: string;
+
+
+  constructor(private authenicationService :Authentication,private router : Router) { }
 
   ngOnInit(): void {
-    this.companyFormGroup = this.fb.group({
-      email: this.fb.control(""),
-      password: this.fb.control("")
-    })
+
   }
+
 
   handleLogin(){
     console.log(this.companyFormGroup.value)
   }
 
-  
+  getLoginData(f: NgForm){
+    let formdata = new FormData();
+    formdata.append("email", f.value.email);
+    formdata.append("password", f.value.password);
+
+    this.authenicationService.login(formdata).subscribe({
+      next : (value)=>{
+        this.authenicationService.authenticateUser(value)
+        this.authenicationService.changeUserLoggedIn(true)
+        if(value.role=="COMPANY"){
+          this.router.navigateByUrl("/profile/offers")
+        }else{
+          this.router.navigateByUrl("/agent/dashboard")
+        }
+      },
+      error : (err) =>{
+        this.errorMessage = "Bad credentials"
+      },
+    })
+
+  }
 
 }

@@ -1,0 +1,81 @@
+<div class="container w-1/2  h-max m-auto mt-6 ">
+    <form>   
+        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only ">Search</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+            <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-purple-500 focus:border-purple-500" placeholder="Search City, Job..." required>
+            <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purpule-300 font-medium text-sm px-4 py-2">Search</button>
+        </div>
+    </form>
+
+    <div class="h-80 flex justify-center items-center my-9" *ngIf="!offers?.length">
+        there are no elements yet
+    </div>
+
+    <article *ngFor="let i of offers;let id=index" class="flex flex-col transition hover:shadow-xl my-7 border border-gray-200">
+        <div class="flex">
+            <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                <time
+                    datetime="2022-10-10"
+                    class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+                >
+                    <span>{{i.createdAT | date:'yyyy' }}</span>
+                    <span class="w-px flex-1 bg-gray-900/10"></span>
+                    <span>{{i.createdAT | date:'MMM d' }}</span>
+                </time>
+                </div>
+            
+                <div class="hidden sm:block sm:basis-56">
+                <img
+                    alt="Guitar"
+                    src='../../assets/{{i.company.image}}'
+                    class="aspect-square h-full w-full object-cover"
+                />
+                </div>
+            
+                <div class="flex flex-1 flex-col justify-between">
+                <div class="border-l border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                    <a href="#">
+                    <h3 class="font-bold uppercase text-gray-900">
+                        {{ i.title }}
+                    </h3>
+                    </a>
+            
+                    <p class="mt-2 text-sm leading-relaxed text-gray-700 line-clamp-3">
+                        {{ i.description }}
+                    </p>
+                </div>
+            
+                <div class="sm:flex sm:items-end sm:justify-end">
+                    <button
+                    (click)="toggle(id)"
+                    class="block bg-purple-300 w-24 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-purple-400"
+                    >
+                    {{ i.isOpen == false || i.isOpen == null ? "View more":"View less" }}
+                    </button>
+                </div>
+                
+                </div>
+            </div>
+            <div [@openClose]="i.isOpen ? 'open' : 'closed'" id="{{i}}">
+                {{id}}<h1>{{ i.title }}</h1>
+            </div>
+    </article>
+
+</div>
+
+<nav aria-label="Page navigation example" class="container w-1/2 m-auto my-12">
+<ul class="inline-flex -space-x-px">
+    <li>
+    <a (click)="pagination(this.currentPage-1)" class="px-3 py-2 ml-0 cursor-pointer leading-tight text-gray-500 bg-white border border-gray-300  hover:bg-gray-100 hover:text-gray-700 ">Previous</a>
+    </li>
+    <li *ngFor="let item of [].constructor(this.numPages+1);let j = index">
+        <a (click)="pagination(j)" [ngClass]="{'bg-purple-100 text-purple-400 border-white ': this.currentPage==j}"class="px-3 py-2 cursor-pointer  leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 ">{{j}}</a>
+    </li>
+    <li>
+    <a (click)="pagination(this.currentPage+1)" class="px-3 py-2 cursor-pointer leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">Next</a>
+    </li>
+</ul>
+</nav>

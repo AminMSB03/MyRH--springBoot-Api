@@ -1,0 +1,828 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>myrh-front documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">myrh-front documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  CompanyRegisterComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/company-register/company-register.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-company-register</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./company-register.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./company-register.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#comapany" >comapany</a>
+                            </li>
+                            <li>
+                                <a href="#file" >file</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onFileChanged" >onFileChanged</a>
+                            </li>
+                            <li>
+                                <a href="#register" >register</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, companyService: <a href="../injectables/CompanyService.html" target="_self">CompanyService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/company-register/company-register.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>companyService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CompanyService.html" target="_self" >CompanyService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">src/app/company-register/company-register.component.ts:18</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onFileChanged"></a>
+                    <span class="name">
+                        <span ><b>onFileChanged</b></span>
+                        <a href="#onFileChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onFileChanged(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="21"
+                            class="link-to-prism">src/app/company-register/company-register.component.ts:21</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="register"></a>
+                    <span class="name">
+                        <span ><b>register</b></span>
+                        <a href="#register"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>register(f: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/company-register/company-register.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>f</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="comapany"></a>
+                    <span class="name">
+                        <span ><b>comapany</b></span>
+                        <a href="#comapany"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Company.html" target="_self" >Company</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/company-register/company-register.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="file"></a>
+                    <span class="name">
+                        <span ><b>file</b></span>
+                        <a href="#file"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>File</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/company-register/company-register.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { CompanyService } from &#x27;./../service/company.service&#x27;;
+import { NgForm } from &#x27;@angular/forms&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Company } from &#x27;../module/company.module&#x27;;
+
+@Component({
+  selector: &#x27;app-company-register&#x27;,
+  templateUrl: &#x27;./company-register.component.html&#x27;,
+  styleUrls: [&#x27;./company-register.component.css&#x27;]
+})
+export class CompanyRegisterComponent implements OnInit {
+
+  file!: File;
+  comapany!: Company;
+
+  constructor(private http:HttpClient, private companyService :CompanyService) { }
+  ngOnInit(): void {
+  }
+
+  onFileChanged(event:any) {
+    this.file &#x3D; event.target.files[0];
+    console.log(this.file.name)
+  }
+
+  register(f: NgForm){
+    
+    const formData &#x3D; new FormData();
+    formData.append(&#x27;file&#x27;, this.file);
+    formData.append(&quot;email&quot;, f.value.email);
+    formData.append(&quot;name&quot;, f.value.name);
+    formData.append(&quot;password&quot;, f.value.password);
+    formData.append(&quot;phoneNumber&quot;, f.value.phoneNumber);
+    formData.append(&quot;image&quot;, this.file.name);
+    this.companyService.register(formData).subscribe({
+      next:(value)&#x3D;&gt;{
+        console.log(&quot;helloooo&quot;)
+      }
+    })
+  }
+
+
+  
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;section class&#x3D;&quot;bg-white&quot;&gt;
+&lt;div class&#x3D;&quot;lg:grid lg:min-h-screen lg:grid-cols-12&quot;&gt;
+    &lt;aside
+    class&#x3D;&quot;relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6&quot;
+    &gt;
+    &lt;img
+        alt&#x3D;&quot;Pattern&quot;
+        src&#x3D;&quot;../../assets/imag.png&quot;
+        class&#x3D;&quot;absolute inset-0 w-9/12 object-cover&quot;
+    /&gt;
+    &lt;/aside&gt;
+
+    &lt;main
+    aria-label&#x3D;&quot;Main&quot;
+    class&#x3D;&quot;flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6&quot;
+    &gt;
+    &lt;div class&#x3D;&quot;max-w-xl lg:max-w-3xl&quot;&gt;
+        &lt;a class&#x3D;&quot;block text-purple-600&quot; href&#x3D;&quot;/&quot;&gt;
+        &lt;span class&#x3D;&quot;sr-only&quot;&gt;Home&lt;/span&gt;
+        &lt;svg
+            class&#x3D;&quot;h-8 sm:h-10&quot;
+            viewBox&#x3D;&quot;0 0 28 24&quot;
+            fill&#x3D;&quot;none&quot;
+            xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;
+        &gt;
+            &lt;path
+            d&#x3D;&quot;M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z&quot;
+            fill&#x3D;&quot;currentColor&quot;
+            /&gt;
+        &lt;/svg&gt;
+        &lt;/a&gt;
+
+        &lt;h2
+        class&#x3D;&quot;mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl&quot;
+        &gt;
+        Welcome to Hire full
+        &lt;/h2&gt;
+
+        &lt;p class&#x3D;&quot;mt-4 leading-relaxed text-gray-500&quot;&gt;
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam
+        dolorum aliquam, quibusdam aperiam voluptatum.
+        &lt;/p&gt;
+
+        &lt;form class&#x3D;&quot;mt-8 grid grid-cols-6 gap-6&quot; (submit)&#x3D;&quot;register(f)&quot; #f&#x3D;&quot;ngForm&quot;&gt;
+        &lt;div class&#x3D;&quot;col-span-6 sm:col-span-3&quot;&gt;
+            &lt;label
+            for&#x3D;&quot;FirstName&quot;
+            class&#x3D;&quot;block text-sm font-medium text-gray-700&quot;
+            &gt;
+            Company Name
+            &lt;/label&gt;
+
+            &lt;input
+            type&#x3D;&quot;text&quot;
+            id&#x3D;&quot;FirstName&quot;
+            name&#x3D;&quot;name&quot;
+            ngModel
+            class&#x3D;&quot;mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm&quot;
+            /&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-span-6 sm:col-span-3&quot;&gt;
+            &lt;label
+            for&#x3D;&quot;LastName&quot;
+            class&#x3D;&quot;block text-sm font-medium text-gray-700&quot;
+            &gt;
+            Sector 
+            &lt;/label&gt;
+
+            &lt;input
+            type&#x3D;&quot;text&quot;
+            id&#x3D;&quot;LastName&quot;
+            name&#x3D;&quot;last_name&quot;
+            class&#x3D;&quot;mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm&quot;
+            /&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-span-6&quot;&gt;
+            &lt;label for&#x3D;&quot;Email&quot; class&#x3D;&quot;block text-sm font-medium text-gray-700&quot;&gt;
+            Email
+            &lt;/label&gt;
+
+            &lt;input
+            type&#x3D;&quot;email&quot;
+            id&#x3D;&quot;Email&quot;
+            name&#x3D;&quot;email&quot;
+            ngModel
+            class&#x3D;&quot;mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm&quot;
+            /&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-span-6 sm:col-span-3&quot;&gt;
+            &lt;label
+            for&#x3D;&quot;PhoneNumber&quot;
+            class&#x3D;&quot;block text-sm font-medium text-gray-700&quot;
+            &gt;
+            Phone Number
+            &lt;/label&gt;
+
+            &lt;input
+            type&#x3D;&quot;text&quot;
+            id&#x3D;&quot;PhoneNumber&quot;
+            ngModel
+            name&#x3D;&quot;phoneNumber&quot;
+            class&#x3D;&quot;mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm&quot;
+            /&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-span-6 sm:col-span-3 flex justify-center items-end&quot;&gt;
+            &lt;label class&#x3D;&quot;block&quot;&gt;
+                &lt;span class&#x3D;&quot;sr-only&quot;&gt;Upload Profile Picture&lt;/span&gt;
+                &lt;input pla type&#x3D;&quot;file&quot; (change)&#x3D;&quot;onFileChanged($event)&quot; #fileInput class&#x3D;&quot;block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 cursor-pointer file:border-0 file:text-sm file:font-semibold file:bg-purple-50 file:text-purple-700 hover:file:bg-purple-100&quot;/&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-span-6 sm:col-span-3&quot;&gt;
+            &lt;label
+            for&#x3D;&quot;Password&quot;
+            class&#x3D;&quot;block text-sm font-medium text-gray-700&quot;
+            &gt;
+            Password
+            &lt;/label&gt;
+
+            &lt;input
+            type&#x3D;&quot;password&quot;
+            id&#x3D;&quot;Password&quot;
+            name&#x3D;&quot;password&quot;
+            ngModel
+            class&#x3D;&quot;mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm&quot;
+            /&gt;
+        &lt;/div&gt;
+        
+
+        &lt;div class&#x3D;&quot;col-span-6 sm:col-span-3&quot;&gt;
+            &lt;label
+            for&#x3D;&quot;PasswordConfirmation&quot;
+            class&#x3D;&quot;block text-sm font-medium text-gray-700&quot;
+            &gt;
+            Password Confirmation
+            &lt;/label&gt;
+
+            &lt;input
+            type&#x3D;&quot;password&quot;
+            id&#x3D;&quot;PasswordConfirmation&quot;
+            name&#x3D;&quot;password_confirmation&quot;
+            class&#x3D;&quot;mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm&quot;
+            /&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-span-6&quot;&gt;
+            &lt;label for&#x3D;&quot;MarketingAccept&quot; class&#x3D;&quot;flex gap-4&quot;&gt;
+            &lt;input
+                type&#x3D;&quot;checkbox&quot;
+                id&#x3D;&quot;MarketingAccept&quot;
+                name&#x3D;&quot;marketing_accept&quot;
+                class&#x3D;&quot;h-5 w-5 border-gray-200 bg-white shadow-sm&quot;
+            /&gt;
+
+            &lt;span class&#x3D;&quot;text-sm text-gray-700&quot;&gt;
+                I want to receive emails about events, product updates and
+                company announcements.
+            &lt;/span&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-span-6 sm:flex sm:items-center sm:gap-4&quot;&gt;
+            &lt;button
+            class&#x3D;&quot;inline-block shrink-0 border border-purple-600 bg-purple-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-purple-600 focus:outline-none focus:ring active:text-purple-500&quot;
+            &gt;
+            Create an account
+            &lt;/button&gt;
+
+            &lt;p class&#x3D;&quot;mt-4 text-sm text-gray-500 sm:mt-0&quot;&gt;
+            Already have an account?
+            &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;text-gray-700 underline&quot;&gt;Log in&lt;/a&gt;.
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;/main&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./company-register.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><section class="bg-white"><div class="lg:grid lg:min-h-screen lg:grid-cols-12">    <aside    class="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6"    >    <img        alt="Pattern"        src="../../assets/imag.png"        class="absolute inset-0 w-9/12 object-cover"    />    </aside>    <main    aria-label="Main"    class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6"    >    <div class="max-w-xl lg:max-w-3xl">        <a class="block text-purple-600" href="/">        <span class="sr-only">Home</span>        <svg            class="h-8 sm:h-10"            viewBox="0 0 28 24"            fill="none"            xmlns="http://www.w3.org/2000/svg"        >            <path            d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"            fill="currentColor"            />        </svg>        </a>        <h2        class="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl"        >        Welcome to Hire full        </h2>        <p class="mt-4 leading-relaxed text-gray-500">        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam        dolorum aliquam, quibusdam aperiam voluptatum.        </p>        <form class="mt-8 grid grid-cols-6 gap-6" (submit)="register(f)" #f="ngForm">        <div class="col-span-6 sm:col-span-3">            <label            for="FirstName"            class="block text-sm font-medium text-gray-700"            >            Company Name            </label>            <input            type="text"            id="FirstName"            name="name"            ngModel            class="mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm"            />        </div>        <div class="col-span-6 sm:col-span-3">            <label            for="LastName"            class="block text-sm font-medium text-gray-700"            >            Sector             </label>            <input            type="text"            id="LastName"            name="last_name"            class="mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm"            />        </div>        <div class="col-span-6">            <label for="Email" class="block text-sm font-medium text-gray-700">            Email            </label>            <input            type="email"            id="Email"            name="email"            ngModel            class="mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm"            />        </div>        <div class="col-span-6 sm:col-span-3">            <label            for="PhoneNumber"            class="block text-sm font-medium text-gray-700"            >            Phone Number            </label>            <input            type="text"            id="PhoneNumber"            ngModel            name="phoneNumber"            class="mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm"            />        </div>        <div class="col-span-6 sm:col-span-3 flex justify-center items-end">            <label class="block">                <span class="sr-only">Upload Profile Picture</span>                <input pla type="file" (change)="onFileChanged($event)" #fileInput class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 cursor-pointer file:border-0 file:text-sm file:font-semibold file:bg-purple-50 file:text-purple-700 hover:file:bg-purple-100"/>            </label>        </div>        <div class="col-span-6 sm:col-span-3">            <label            for="Password"            class="block text-sm font-medium text-gray-700"            >            Password            </label>            <input            type="password"            id="Password"            name="password"            ngModel            class="mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm"            />        </div>                <div class="col-span-6 sm:col-span-3">            <label            for="PasswordConfirmation"            class="block text-sm font-medium text-gray-700"            >            Password Confirmation            </label>            <input            type="password"            id="PasswordConfirmation"            name="password_confirmation"            class="mt-1 w-full py-3 border border-gray-200 bg-white text-sm text-gray-700 shadow-sm"            />        </div>        <div class="col-span-6">            <label for="MarketingAccept" class="flex gap-4">            <input                type="checkbox"                id="MarketingAccept"                name="marketing_accept"                class="h-5 w-5 border-gray-200 bg-white shadow-sm"            />            <span class="text-sm text-gray-700">                I want to receive emails about events, product updates and                company announcements.            </span>            </label>        </div>        <div class="col-span-6 sm:flex sm:items-center sm:gap-4">            <button            class="inline-block shrink-0 border border-purple-600 bg-purple-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-purple-600 focus:outline-none focus:ring active:text-purple-500"            >            Create an account            </button>            <p class="mt-4 text-sm text-gray-500 sm:mt-0">            Already have an account?            <a href="#" class="text-gray-700 underline">Log in</a>.            </p>        </div>        </form>    </div>    </main></div></section></div>'
+    var COMPONENTS = [{'name': 'AddOfferFormComponent', 'selector': 'app-add-offer-form'},{'name': 'AgentDashboardComponent', 'selector': 'app-agent-dashboard'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyProfileComponent', 'selector': 'app-company-profile'},{'name': 'CompanyRegisterComponent', 'selector': 'app-company-register'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'OffersComponent', 'selector': 'app-offers'},{'name': 'OwnOffersComponent', 'selector': 'app-own-offers'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CompanyRegisterComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CompanyRegisterComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

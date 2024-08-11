@@ -58,9 +58,11 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 .withIssuer(request.getRequestURL().toString())
                 .sign(algo1);
 
+
         Map<String, String> idToken = new HashMap<>();
-        idToken.put("access-token",jwtAccessToken);
-        idToken.put("refresh-token",jwtRefreshToken);
+        idToken.put("access_token",jwtAccessToken);
+        idToken.put("refresh_token",jwtRefreshToken);
+        idToken.put("role",user.getAuthorities().toArray()[0].toString());
 
         response.setContentType("application/json");
         new ObjectMapper().writeValue(response.getOutputStream(),idToken);

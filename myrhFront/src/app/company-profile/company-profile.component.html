@@ -1,0 +1,50 @@
+<article>
+<div>
+<div>
+<img class="h-32 w-full object-cover lg:h-48" src="https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
+</div>
+<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+<div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
+    <div class="flex">
+    <img class="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32" src="../../assets/{{this.currentcompany.image}}" alt="">
+    </div>
+    <div class="mt-6 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
+    <div class="mt-6 min-w-0 flex-1 sm:hidden 2xl:block">
+        <h1 class="truncate text-2xl font-bold text-gray-900">{{this.currentcompany.name}}</h1>
+    </div>
+    <div class="justify-stretch mt-6 flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
+        <button type="button" class="inline-flex justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+
+        <span>Settings</span>
+        </button>
+        
+    </div>
+    </div>
+</div>
+<div class="mt-6 hidden min-w-0 flex-1 sm:block 2xl:hidden">
+    <h1 class="truncate text-2xl font-bold text-gray-900">Ricardo Cooper</h1>
+</div>
+</div>
+</div>
+
+<div class="mt-6 sm:mt-2 2xl:mt-5 ">
+<div class="border-b border-gray-200">
+<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+    <a routerLink="/profile/offers"class="border-purple-500 text-gray-900 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" aria-current="page">Offers</a>
+
+    <a routerLink="/profile/add_offer" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">Add Offer</a>
+
+    </nav>
+</div>
+</div>
+</div>
+<div class="w-3/5  m-auto h-max">
+    <router-outlet></router-outlet>
+</div>
+
+</article>
